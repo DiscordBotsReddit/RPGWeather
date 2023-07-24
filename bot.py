@@ -51,7 +51,7 @@ async def on_ready():
 
 
 @bot.command(name="weather")
-async def test(ctx: commands.Context):
+async def weather(ctx: commands.Context):
     await ctx.message.delete()
     temp_f = random.randint(-32, 100)
     temp_c = round((temp_f - 32) / 1.8, 1)
